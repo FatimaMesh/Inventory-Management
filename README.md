@@ -1,10 +1,8 @@
 # Inventory Management
 
-In this assignment, you will create a simple inventory management system which allows users to add, remove, and view items in the inventory.
+It is a simple inventory management system which allows users to add, remove, and view items in the inventory.
 
-## Requirements
-
-## Level 1 - Mandatory
+## Classes
 
 1. Create class `Item`, which has name (readonly), quantity, and created date, which are private. Amount of each item cannot be negative. Provide the following features:
 
@@ -19,7 +17,7 @@ In this assignment, you will create a simple inventory management system which a
 - Method `SortByNameAsc`to get the sorted collection by name in ascending order.
 
 ```
-// items example - You do not need to follow exactly the same
+// items example
 var waterBottle = new Item("Water Bottle", 10, new DateTime(2023, 1, 1));
 var chocolateBar = new Item("Chocolate Bar", 15, new DateTime(2023, 2, 1));
 var notebook = new Item("Notebook", 5, new DateTime(2023, 3, 1));
@@ -37,18 +35,19 @@ var umbrella = new Item("Umbrella", 5);
 var sunscreen = new Item("Sunscreen", 8);
 ```
 
-## Level 2 - Extra feature: Capacity
+## Extra feature: Capacity
 
 Class `Store` should have the following features:
 
 - Maximum capacity , which is total amount of items allowed in the store, and contructor should also take an integer value as the maximum capacity of the inventory.
 - Modify the add method to not overload the capacity
 
-## Level 3 - Extra feature: Complex functionalities
+## Extra feature: Complex functionalities
 
 Class `Store` should have extra features
 
 - Method `SortByDate` to get the sorted collection by date dynamically (asc or desc)
+  
   ```
    // method invocation example - You do not need to follow exactly the same
   var store = new Store(300)
@@ -91,7 +90,3 @@ Class `Store` should have extra features
    - Shampoo, Created: 09/01/2023
    - Toothbrush, Created: 10/01/2023
   ```
-
-## Deadline
-
-Thursday 28th End of day
